@@ -2,6 +2,13 @@
   --yellowish: #ffbf46;
   --raisinblack: #272932;
   --purplenavy: #474973;
+  --radius: 0;
+  --bgColor: rgba(255, 0, 0, 1);
+  --rndmHex: #afdbf6;
+  --op: 1;
+  --posY: 0;
+  --posX: 0;
+  --size: 1;
 }
 
 * {
@@ -71,7 +78,7 @@
   padding: 1vh auto;
 }
 
-#slider-vert {
+#sliderY {
   transform: rotate(-270deg);
 }
 
@@ -83,9 +90,12 @@
 
 /* Objeto manipulable con el DOM */
 .objeto {
-  background-color: var(--purplenavy);
-  margin-top: 10vh;
+  margin-top: 6vh;
   margin-left: 0.3vw;
   height: 200px;
   width: 200px;
+  border-radius: var(--radius);
+  background-color: var(--bgColor);
+  opacity: var(--op);
+  transform: scale(var(--size)) translateX(var(--posX)) translateY(var(--posY));
 }
