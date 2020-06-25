@@ -1,14 +1,13 @@
 :root {
   --yellowish: #ffbf46;
   --raisinblack: #272932;
-  --purplenavy: #474973;
   --radius: 0;
   --bgColor: rgba(255, 0, 0, 1);
-  --rndmHex: #afdbf6;
   --op: 1;
   --posY: 0;
   --posX: 0;
   --size: 1;
+  --rotationDeg: 0;
 }
 
 * {
@@ -97,5 +96,6 @@
   border-radius: var(--radius);
   background-color: var(--bgColor);
   opacity: var(--op);
-  transform: scale(var(--size)) translateX(var(--posX)) translateY(var(--posY));
+  transform: scale(var(--size)) translateX(var(--posX)) translateY(var(--posY))
+    rotate(var(--rotationDeg));
 }
